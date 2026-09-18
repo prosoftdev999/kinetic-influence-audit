@@ -1,0 +1,499 @@
+{
+  "audit": {
+    "swapped_run_pairs": [
+      [
+        "R01",
+        "R08"
+      ],
+      [
+        "R04",
+        "R12"
+      ],
+      [
+        "R06",
+        "R09"
+      ]
+    ],
+    "time_scale_by_run": {
+      "R02": 1.25,
+      "R11": 0.8
+    },
+    "exchange_site": "C"
+  },
+  "design_run_ids": [
+    "E06",
+    "E19",
+    "E20",
+    "E22"
+  ],
+  "stability": {
+    "most_influential_run_id": null,
+    "most_influential_pair": null,
+    "leave_one_trace_out": [],
+    "leave_two_traces_out": []
+  },
+  "parameters": {
+    "k1_ref": 0.05002091327693138,
+    "k2_ref": 0.029006543208098694,
+    "k3_ref": 0.02239240222425156,
+    "k4_ref": 0.024487767417381234,
+    "kx_ref": 0.01638058600088652,
+    "ea1_kJ_mol": 45.021179556849454,
+    "ea2_kJ_mol": 54.10257918074064,
+    "ea3_kJ_mol": 39.910663737281205,
+    "ea4_kJ_mol": 48.64067379091881,
+    "eax_kJ_mol": 31.29519130546169
+  },
+  "predictions": [
+    {
+      "run_id": "H01",
+      "time_min": 9,
+      "isotopologue": "A0",
+      "concentration_mmol_L": 0.45130000091553923
+    },
+    {
+      "run_id": "H01",
+      "time_min": 9,
+      "isotopologue": "A1",
+      "concentration_mmol_L": 0.09906585385950861
+    },
+    {
+      "run_id": "H01",
+      "time_min": 9,
+      "isotopologue": "B0",
+      "concentration_mmol_L": 0.18008325610671808
+    },
+    {
+      "run_id": "H01",
+      "time_min": 9,
+      "isotopologue": "B1",
+      "concentration_mmol_L": 0.039530470852694205
+    },
+    {
+      "run_id": "H01",
+      "time_min": 9,
+      "isotopologue": "C0",
+      "concentration_mmol_L": 0.09569421330068215
+    },
+    {
+      "run_id": "H01",
+      "time_min": 9,
+      "isotopologue": "C1",
+      "concentration_mmol_L": 0.024866525962319065
+    },
+    {
+      "run_id": "H01",
+      "time_min": 9,
+      "isotopologue": "D0",
+      "concentration_mmol_L": 0.023975328769610893
+    },
+    {
+      "run_id": "H01",
+      "time_min": 9,
+      "isotopologue": "D1",
+      "concentration_mmol_L": 0.00548435023292787
+    },
+    {
+      "run_id": "H01",
+      "time_min": 27,
+      "isotopologue": "A0",
+      "concentration_mmol_L": 0.16150748106057802
+    },
+    {
+      "run_id": "H01",
+      "time_min": 27,
+      "isotopologue": "A1",
+      "concentration_mmol_L": 0.03545286169622444
+    },
+    {
+      "run_id": "H01",
+      "time_min": 27,
+      "isotopologue": "B0",
+      "concentration_mmol_L": 0.28961979802100785
+    },
+    {
+      "run_id": "H01",
+      "time_min": 27,
+      "isotopologue": "B1",
+      "concentration_mmol_L": 0.06357507761436758
+    },
+    {
+      "run_id": "H01",
+      "time_min": 27,
+      "isotopologue": "C0",
+      "concentration_mmol_L": 0.14231703632000123
+    },
+    {
+      "run_id": "H01",
+      "time_min": 27,
+      "isotopologue": "C1",
+      "concentration_mmol_L": 0.050092739521986944
+    },
+    {
+      "run_id": "H01",
+      "time_min": 27,
+      "isotopologue": "D0",
+      "concentration_mmol_L": 0.1423605059633634
+    },
+    {
+      "run_id": "H01",
+      "time_min": 27,
+      "isotopologue": "D1",
+      "concentration_mmol_L": 0.03507449980247051
+    },
+    {
+      "run_id": "H01",
+      "time_min": 55,
+      "isotopologue": "A0",
+      "concentration_mmol_L": 0.03265808240198481
+    },
+    {
+      "run_id": "H01",
+      "time_min": 55,
+      "isotopologue": "A1",
+      "concentration_mmol_L": 0.007168847356533251
+    },
+    {
+      "run_id": "H01",
+      "time_min": 55,
+      "isotopologue": "B0",
+      "concentration_mmol_L": 0.24229914008802092
+    },
+    {
+      "run_id": "H01",
+      "time_min": 55,
+      "isotopologue": "B1",
+      "concentration_mmol_L": 0.053187616116882636
+    },
+    {
+      "run_id": "H01",
+      "time_min": 55,
+      "isotopologue": "C0",
+      "concentration_mmol_L": 0.10432413782765518
+    },
+    {
+      "run_id": "H01",
+      "time_min": 55,
+      "isotopologue": "C1",
+      "concentration_mmol_L": 0.05433476917472911
+    },
+    {
+      "run_id": "H01",
+      "time_min": 55,
+      "isotopologue": "D0",
+      "concentration_mmol_L": 0.3354085227332408
+    },
+    {
+      "run_id": "H01",
+      "time_min": 55,
+      "isotopologue": "D1",
+      "concentration_mmol_L": 0.09061888430095363
+    },
+    {
+      "run_id": "H02",
+      "time_min": 9,
+      "isotopologue": "A0",
+      "concentration_mmol_L": 0.3874952346995908
+    },
+    {
+      "run_id": "H02",
+      "time_min": 9,
+      "isotopologue": "A1",
+      "concentration_mmol_L": 0.16606938629982462
+    },
+    {
+      "run_id": "H02",
+      "time_min": 9,
+      "isotopologue": "B0",
+      "concentration_mmol_L": 0.2073595960375962
+    },
+    {
+      "run_id": "H02",
+      "time_min": 9,
+      "isotopologue": "B1",
+      "concentration_mmol_L": 0.08886839830182695
+    },
+    {
+      "run_id": "H02",
+      "time_min": 9,
+      "isotopologue": "C0",
+      "concentration_mmol_L": 0.12714747535877177
+    },
+    {
+      "run_id": "H02",
+      "time_min": 9,
+      "isotopologue": "C1",
+      "concentration_mmol_L": 0.05085521433399306
+    },
+    {
+      "run_id": "H02",
+      "time_min": 9,
+      "isotopologue": "D0",
+      "concentration_mmol_L": 0.036738116306418434
+    },
+    {
+      "run_id": "H02",
+      "time_min": 9,
+      "isotopologue": "D1",
+      "concentration_mmol_L": 0.01546657866197822
+    },
+    {
+      "run_id": "H02",
+      "time_min": 27,
+      "isotopologue": "A0",
+      "concentration_mmol_L": 0.10180181175372952
+    },
+    {
+      "run_id": "H02",
+      "time_min": 27,
+      "isotopologue": "A1",
+      "concentration_mmol_L": 0.04362934789445551
+    },
+    {
+      "run_id": "H02",
+      "time_min": 27,
+      "isotopologue": "B0",
+      "concentration_mmol_L": 0.28764861133949104
+    },
+    {
+      "run_id": "H02",
+      "time_min": 27,
+      "isotopologue": "B1",
+      "concentration_mmol_L": 0.12327797628835331
+    },
+    {
+      "run_id": "H02",
+      "time_min": 27,
+      "isotopologue": "C0",
+      "concentration_mmol_L": 0.177551475385092
+    },
+    {
+      "run_id": "H02",
+      "time_min": 27,
+      "isotopologue": "C1",
+      "concentration_mmol_L": 0.060939084558507925
+    },
+    {
+      "run_id": "H02",
+      "time_min": 27,
+      "isotopologue": "D0",
+      "concentration_mmol_L": 0.20261378815389455
+    },
+    {
+      "run_id": "H02",
+      "time_min": 27,
+      "isotopologue": "D1",
+      "concentration_mmol_L": 0.08253790462647606
+    },
+    {
+      "run_id": "H02",
+      "time_min": 55,
+      "isotopologue": "A0",
+      "concentration_mmol_L": 0.012727368410847395
+    },
+    {
+      "run_id": "H02",
+      "time_min": 55,
+      "isotopologue": "A1",
+      "concentration_mmol_L": 0.005454586461791741
+    },
+    {
+      "run_id": "H02",
+      "time_min": 55,
+      "isotopologue": "B0",
+      "concentration_mmol_L": 0.20250449129393505
+    },
+    {
+      "run_id": "H02",
+      "time_min": 55,
+      "isotopologue": "B1",
+      "concentration_mmol_L": 0.08678763912597216
+    },
+    {
+      "run_id": "H02",
+      "time_min": 55,
+      "isotopologue": "C0",
+      "concentration_mmol_L": 0.12407785835825534
+    },
+    {
+      "run_id": "H02",
+      "time_min": 55,
+      "isotopologue": "C1",
+      "concentration_mmol_L": 0.03294225240041289
+    },
+    {
+      "run_id": "H02",
+      "time_min": 55,
+      "isotopologue": "D0",
+      "concentration_mmol_L": 0.4424369758311475
+    },
+    {
+      "run_id": "H02",
+      "time_min": 55,
+      "isotopologue": "D1",
+      "concentration_mmol_L": 0.17306882811763832
+    },
+    {
+      "run_id": "H03",
+      "time_min": 9,
+      "isotopologue": "A0",
+      "concentration_mmol_L": 0.24654465411479246
+    },
+    {
+      "run_id": "H03",
+      "time_min": 9,
+      "isotopologue": "A1",
+      "concentration_mmol_L": 0.2186339385546273
+    },
+    {
+      "run_id": "H03",
+      "time_min": 9,
+      "isotopologue": "B0",
+      "concentration_mmol_L": 0.16321088574034798
+    },
+    {
+      "run_id": "H03",
+      "time_min": 9,
+      "isotopologue": "B1",
+      "concentration_mmol_L": 0.14473418169427085
+    },
+    {
+      "run_id": "H03",
+      "time_min": 9,
+      "isotopologue": "C0",
+      "concentration_mmol_L": 0.10192050413285927
+    },
+    {
+      "run_id": "H03",
+      "time_min": 9,
+      "isotopologue": "C1",
+      "concentration_mmol_L": 0.09890545048143382
+    },
+    {
+      "run_id": "H03",
+      "time_min": 9,
+      "isotopologue": "D0",
+      "concentration_mmol_L": 0.03458227525696508
+    },
+    {
+      "run_id": "H03",
+      "time_min": 9,
+      "isotopologue": "D1",
+      "concentration_mmol_L": 0.03146811002470319
+    },
+    {
+      "run_id": "H03",
+      "time_min": 27,
+      "isotopologue": "A0",
+      "concentration_mmol_L": 0.049325142929690646
+    },
+    {
+      "run_id": "H03",
+      "time_min": 27,
+      "isotopologue": "A1",
+      "concentration_mmol_L": 0.04374116448482001
+    },
+    {
+      "run_id": "H03",
+      "time_min": 27,
+      "isotopologue": "B0",
+      "concentration_mmol_L": 0.20220758224981122
+    },
+    {
+      "run_id": "H03",
+      "time_min": 27,
+      "isotopologue": "B1",
+      "concentration_mmol_L": 0.1793161578441722
+    },
+    {
+      "run_id": "H03",
+      "time_min": 27,
+      "isotopologue": "C0",
+      "concentration_mmol_L": 0.10644687369812847
+    },
+    {
+      "run_id": "H03",
+      "time_min": 27,
+      "isotopologue": "C1",
+      "concentration_mmol_L": 0.1255504847047368
+    },
+    {
+      "run_id": "H03",
+      "time_min": 27,
+      "isotopologue": "D0",
+      "concentration_mmol_L": 0.17072995594598397
+    },
+    {
+      "run_id": "H03",
+      "time_min": 27,
+      "isotopologue": "D1",
+      "concentration_mmol_L": 0.16268263814265624
+    },
+    {
+      "run_id": "H03",
+      "time_min": 55,
+      "isotopologue": "A0",
+      "concentration_mmol_L": 0.0040364888804062925
+    },
+    {
+      "run_id": "H03",
+      "time_min": 55,
+      "isotopologue": "A1",
+      "concentration_mmol_L": 0.0035795278750772783
+    },
+    {
+      "run_id": "H03",
+      "time_min": 55,
+      "isotopologue": "B0",
+      "concentration_mmol_L": 0.12692185898725444
+    },
+    {
+      "run_id": "H03",
+      "time_min": 55,
+      "isotopologue": "B1",
+      "concentration_mmol_L": 0.11255334664907468
+    },
+    {
+      "run_id": "H03",
+      "time_min": 55,
+      "isotopologue": "C0",
+      "concentration_mmol_L": 0.04893729309828286
+    },
+    {
+      "run_id": "H03",
+      "time_min": 55,
+      "isotopologue": "C1",
+      "concentration_mmol_L": 0.07818033567230114
+    },
+    {
+      "run_id": "H03",
+      "time_min": 55,
+      "isotopologue": "D0",
+      "concentration_mmol_L": 0.33225418284358416
+    },
+    {
+      "run_id": "H03",
+      "time_min": 55,
+      "isotopologue": "D1",
+      "concentration_mmol_L": 0.33353696599401894
+    }
+  ],
+  "sequence_audit": {
+    "vial_order": [
+      "Q03",
+      "Q09",
+      "Q01",
+      "Q06",
+      "Q10",
+      "Q02",
+      "Q08",
+      "Q05",
+      "Q07",
+      "Q04"
+    ],
+    "carryover_fraction_polar": 0.24,
+    "carryover_fraction_sticky": 0.42,
+    "deep_wash_after_acquisition": 4,
+    "chi_square": 60.71270367083644
+  }
+}

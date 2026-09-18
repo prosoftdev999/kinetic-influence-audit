@@ -1,0 +1,32 @@
+{
+  "output": "/app/result.json",
+  "required": {
+    "audit": [
+      "swapped_run_pairs",
+      "time_scale_by_run",
+      "exchange_site"
+    ],
+    "design_run_ids": "four sorted IDs from design_candidates.csv",
+    "stability": "leave-one-trace-out analysis from stability_protocol.md",
+    "parameters": [
+      "k1_ref",
+      "k2_ref",
+      "k3_ref",
+      "k4_ref",
+      "kx_ref",
+      "ea1_kJ_mol",
+      "ea2_kJ_mol",
+      "ea3_kJ_mol",
+      "ea4_kJ_mol",
+      "eax_kJ_mol"
+    ],
+    "predictions": "one row per run_id/time_min/isotopologue in prediction_times.csv",
+    "sequence_audit": {
+      "vial_order": "all ten QC vial IDs in acquisition order",
+      "carryover_fraction_polar": "one value from the qualification grid",
+      "carryover_fraction_sticky": "one value from the qualification grid",
+      "deep_wash_after_acquisition": "1-based acquisition number before the wash break",
+      "chi_square": "minimum normalized residual sum from autosampler_protocol.md"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+artifacts = ["/app/result.json", "/app/solver.py"]
+
+[task]
+name = "afterquery/kinetic-influence-audit"
+
+[metadata]
+author_name = "Thomas Morison"
+author_email = "matiasv931026@gmail.com"
+difficulty_explanation = "This is a campaign-reliability audit rather than a one-file parameter fit. The submitted solver must recover the documented class of export incidents from the visible campaign and from a sealed alternate campaign with a different set of reciprocal ID transpositions. For either campaign, one consistent repair must support an eight-state isotope model, ten shared kinetic quantities, twelve single-trace refits, all 66 two-trace interaction refits, a withheld prediction grid, and a constrained follow-up decision across five uncertainty scenarios. The handoff also includes an autosampler qualification whose vial labels were lost: the solver has to jointly recover a ten-vial acquisition permutation, two class-specific carryover fractions, and one deep-wash boundary by minimizing the stated chi-square over a nonlocal sequence model. A nearest-vial assignment is not enough because carryover shifts several acquisitions toward the wrong nominal vial; the correct result requires predecessor-dependent reasoning and a single reset that can occur on any edge. The sealed replay uses a different qualification sequence, wash position, and carryover pair, so hard-coded visible answers do not generalize. This mirrors a process-development kineticist validating both sample-lineage integrity and a kinetic analysis pipeline before using the campaign for another reactor block. The laboratory records are deterministic synthetic data with seeded instrument noise. The difficulty comes from coupling discrete data-forensics decisions with continuous fitting, repeated perturbation refits, and robust experimental design rather than from hidden conventions or volume alone."
+solution_explanation = "The reference solver accepts its data and output locations through environment variables. It converts session-specific areas to concentrations, compares both exchange hypotheses while alternating trace assignment, clock selection, and a bounded shared-parameter fit, then performs twelve single and 66 pair deletion refits for the submitted campaign. It separately treats the autosampler qualification as a predecessor-dependent sequence problem: for every allowed pair of carryover fractions it uses subset dynamic programming with a state for whether the one deep wash has been consumed, then selects the global minimum chi-square path. It evaluates every deletion model on the withheld schedule, separates interaction displacement from the corresponding single effects, and scores all feasible four-reactor designs. In replay mode the same solver skips only the repeated deletion refits and independently reconstructs the sealed export incident and its different autosampler sequence before producing parameters, predictions, mass closure, and the design."
+verification_explanation = "The verifier checks the required scientific content in `/app/result.json` and deliberately ignores extra diagnostic fields; there is no result-file size cap. It validates all twelve single and 66 pair deletion refits plus the autosampler sequence reconstruction, then executes `/app/solver.py` in time-bounded replay mode against a sealed alternate export incident and checks the independently recovered swaps, clock corrections, exchange site, autosampler vial order, both carryover fractions, wash boundary, robust design, ten parameters, 72 predictions, and mass closure. The replay subprocess runs as UID/GID 65534 with CPU, address-space, file-size, descriptor, and wall-clock limits; `/tests` and `/logs/verifier` are root-only, its working directory contains only the sealed input copy and writable output location, and it receives a minimal environment with no credentials. The numeric bounds were calibrated to accept legitimate numerical-method and optimizer variation rather than one exact serialization: the linear eight-state propagator was independently recomputed with adaptive DOP853 integration at rtol 1e-10/atol 1e-12 and differed from the matrix-exponential path by at most 2.6e-11 mmol/L; full-data fits restarted from two materially perturbed log-parameter vectors converged within 1.4e-9 relative in every parameter; representative single- and pair-deletion refits restarted from perturbed points changed log-shift metrics by at most 1.5e-8 and prediction-shift metrics by at most 2e-10 mmol/L. The submitted tolerances are intentionally much wider than that numerical scatter while still rejecting a materially different scientific result: 3.5% on reference rates, 2.5% on activation energies, 0.003 mmol/L on predictions and closed-reactor mass balance, and 0.4% on deletion-fit parameters. The absolute 2e-4/2e-5 bounds on deletion log/prediction shifts include optimizer termination and floating-point variation; interaction excesses use 3e-4/3e-5 because each is a difference involving the pair result and two single-deletion results, so subtraction can accumulate three small numerical errors. Sequence identities and carryover-grid values are exact; chi-square allows 0.05 solely for the decimal rounding of the CSV measurements. The sealed qualification uses a different vial permutation, carryover pair, and wash boundary from the visible one, so copying the visible sequence or kinetic answer cannot pass replay."
+category = "Science"
+subcategory = "Chemistry"
+tags = ["reaction-kinetics", "isotope-labeling", "inverse-problems"]
+expert_time_estimate_hours = 34
+relevant_experience = "I build reproducible scientific-computing tasks around laboratory data handoffs, including calibration, coupled kinetic models, parameter estimation, and machine-checkable prediction deliverables."
+
+[verifier]
+timeout_sec = 360.0
+environment_mode = "separate"
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0

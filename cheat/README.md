@@ -1,0 +1,3 @@
+# Deliberate shortcut checks
+
+These are reviewer-facing negative controls. `make_guess.py` writes a polished-looking result with the wrong run pairs, clock corrections, exchange site, kinetic rates, predictions, and a first-four-candidates design guess. It skips the deletion refits and does not provide a reusable solver for the sealed replay. It does not use sealed verifier data or evaluate the robust information objective. The current campaign's recovered B-exchange model has scaled SSE 165.881227; the fully refitted wrong topology has SSE 124143.996169. The local matrix gives this shortcut reward 0.
